@@ -2,52 +2,39 @@
 <head>
     <meta charset="utf-8" />
     <title>Put Page Title Here</title>
-    <link rel="stylesheet" href="style-original.css" />
+    <link rel="stylesheet" href="css/SampleStyle.css" />
     <link rel="shortcut icon" href="/favicon.ico" />
 </head>
 <body>
 
+    <FORM METHOD="LINK" ACTION="radiobuttons.html">
+    <INPUT TYPE="submit" VALUE="Clickable Button">
+    </FORM>
+    <FORM>
+<TABLE BORDER CELLPADDING=3>
+<TR>
+<TD><NOBR>radius: <INPUT NAME="Circle_radius" SIZE=4></NOBR></TD>
+<TD><INPUT TYPE=BUTTON OnClick="Circle_calc(this.form);" VALUE="calculate"></TD>
+<TD ALIGN=RIGHT BGCOLOR="#AACCFF">
+<NOBR>circumference: <INPUT NAME="Circle_circumference" SIZE=9></NOBR><BR>
+<NOBR>area: <INPUT NAME="Circle_area" SIZE=9></NOBR></TD>
+</TR>
+</TABLE>
+</FORM>
+<FORM Name="Form1" ACTION="">
+<INPUT TYPE=BUTTON VALUE="Click me" NAME="BtnHello" OnClick="Hello()">
+</FORM>
 
+<SCRIPT LANGUAGE="JavaScript">
+<!--
 
-    <table align="center">
-        <tr>
-            <h1>Portal</h1>
-        </tr>
-    <tr>
-    <td>
-    <button type="Button">Click me!</button>
-    </td>
-    <td align="center">
-    <button type="Button">Click me!</button>
-    </td>
-    <td>
-    <button type="Button">Click me!</button>
-    </td>
-    </tr>
-    <tr>
-    <td>
-    <button type="Button">Click me!</button>
-    </td>
-    <td>
-    <img src="https://avatars0.githubusercontent.com/u/1355462?v=3&s=96" alt="logo" height="100" width="100">
-    </td>
-    <td>
-    <button type="Button">Click me!</button>
-    </td>
-    </tr>
-    <tr>
-    <td>
-    <button type="Button">Click me!</button>
-    </td>
-    <td align="center">
-    <button type="Button">Click me!</button>
-    </td>
-    <td>
-    <button type="Button">Click me!</button>
-    </td>
-    </tr>
-    </table>
+    function  ()
+    {
+        alert("Hello World!")
+    }
 
+//-->
+<SCRIPT>
 
     <p>A paragraph</p>
 </body>
