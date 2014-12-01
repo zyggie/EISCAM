@@ -8,7 +8,16 @@
 <body>
     <p>A paragraph</p>
     <input type='button' onclick='location.reload();' value='Refresh Page' />
+	<FORM METHOD="POST" ACTION="cgi-bin/take_a_picture.sh">
+	<label>number(min 3 max 60): <input type='number' name='number' min='3' max='60'/></label><BR>
+	<INPUT TYPE="text"> <BR>
+	<INPUT TYPE="submit">
 
+</FORM> 
     <p>Last paragraph</p>
+	<button type="submit" name="Snap" value="Snap_btn_was_clicked" action="/cgi-bin/take_a_picture.py" method="post">
+    <p>  Snap a New Photo</p>
+    <img src="test.jpg" width="200em" height="150em" id="Snap" />
+</button>
 </body>
 </html>
