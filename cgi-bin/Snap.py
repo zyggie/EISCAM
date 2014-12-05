@@ -35,6 +35,7 @@ def main():
     <head>    
     <meta charset="utf-8" />
     <title>EISCAM Test - Snapshot</title>
+    <link rel="stylesheet" type="text/css" href="/css/SampleStyle.css">
     <link rel="shortcut icon" href="/favicon.ico" />
     </head>"
     <body>
