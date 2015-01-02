@@ -3,6 +3,12 @@
 <title>EISCAM v-0.0.0.25</title>
 
 <html>
+
+<script>
+    function visitPage(var=target_url){
+        window.location=!target_url;
+    }
+</script>
 <style type="text/css">
 /* Styling button */
  
@@ -36,13 +42,23 @@ a.button{
  
 a.button:hover{
     /* Lighter gradients for the hover effect */
-    text-decoration:none;
-    background-color: #F902B6;
-    background-image: -moz-linear-gradient(#6bbbe9, #57a5d4);
-    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#6bbbe9), to(#57a5d4));
-    box-shadow:3px 3px 3px #333;
-    -moz-box-shadow:3px 3px 3px #333;
-    -webkit-box-shadow:3px 3px 3px #333;
+margin: 6px;
+min-width: 330px;
+min-height: 66px;
+cursor:pointer; /*forces the cursor to change to a hand when the button is hovered*/
+padding:5px 25px; /*add some padding to the inside of the button*/
+background:#777777; /*the colour of the button*/
+border:1px solid #AAAAAA; /*required or the default border for the browser will appear*/
+/*give the button curved corners, alter the size as required*/
+-moz-border-radius: 10px;
+-webkit-border-radius: 10px;
+border-radius: 10px;
+/*give the button a drop shadow*/
+-webkit-box-shadow: 0 0 4px rgba(0,0,0, .75);
+-moz-box-shadow: 0 0 4px rgba(0,0,0, .75);
+box-shadow: 0 0 4px rgba(0,0,0, .75);
+/*style the text*/
+color:#f3f3f3;
 }
 /***FIRST STYLE THE BUTTON***/ 
 input#regularbutton{
@@ -137,9 +153,14 @@ box-shadow: 0 0 1px rgba(0,0,0, .75);
       <!-- Since this aside is contained within an article, a parser
       should understand that the content of this aside is directly related
       to the article itself. -->
-      <h1>Main Menu</h1>
+      <h1><form action="/index.html" class="inline-form" method="get">
+        <input class="a.button"
+               onclick="location.href='/index.html';return false;"
+               value="Main Menu"
+               type="submit" />
+    </form></h1>
       <dl>
-	<dt><input id="regularbutton" type="submit" value="Status" /></dt>
+	<dt><input id="regularbutton" type="submit" value="Back to index"/></dt>
 	<dt><input id="regularbutton" type="submit" value=" Media & Data Controls  " /></dt>
 	<dt><input id="regularbutton" type="submit" value="GPS & Inclinometer Setup" /></dt>
 	<dt><input id="regularbutton" type="submit" value=" Environmental Controls  " /></dt>

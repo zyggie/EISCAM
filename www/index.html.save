@@ -1,8 +1,8 @@
 
 <!DOCTYPE HTML>
-<title>EISCAM v-0.0.0.25</title>
 
 <html>
+
 <style type="text/css">
 /* Styling button */
  
@@ -142,8 +142,7 @@ box-shadow: 0 0 1px rgba(0,0,0, .75);
 	<dt><input id="regularbutton" type="submit" value="Status" /></dt>
 	<dt><input id="regularbutton" type="submit" value=" Media & Data Controls  " /></dt>
 	<dt><input id="regularbutton" type="submit" value="GPS & Inclinometer Setup" /></dt>
-	<dt><input id="regularbutton" type="submit" value=" Environmental Controls  " /></dt>
-	<dt><input id="regularbutton" type="submit" value=" Camera Setup " /></dt>
+	<dt><input id="regularbutton" type="submit" value=" Environmental Control  " /></dt>
       	<dt><input id="gobutton" type="submit" value="Git!" /> <input id="stopbutton" type="submit" value="Whoa!" alt="Whoa! You stupid dragon."/> </dt>
 <!--
         <dd>ipsum dolor sit amet dt</dd>
