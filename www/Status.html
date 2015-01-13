@@ -4,19 +4,22 @@
 <link rel="stylesheet" href="css/Zstyle1.css" type="text/css" />
 <body>
   <header>
-    <h1>EISCam Control - Main	</h1>
+    <h1>EISCam Control - Status</h1>
   </header>
   <article>
-    <aside>
-      <!-- Since this aside is contained within an article, a parser
-      should understand that the content of this aside is directly related
-      to the article itself. -->
-      <dl>
-        <dt><form method="link" action="/Main.html"> <input id="regularbutton" type="submit" value="Main" /></form></dt>
-        <dt><form method="link" action="/Status.html"> <input id="regularbutton" type="submit" value="Status" /></form></dt>
-        <dt><form method="link" action="/MDC.html"> <input id="regularbutton" type="submit" value=" Media & Data Controls  " /></form></dt>
-        <dt><form method="link" action="/GPS.html"> <input id="regularbutton" type="submit" value="GPS & Inclinometer Setup " /></form></dt>
-        <dt><form method="link" action="/Env.html"> <input id="regularbutton" type="submit" value=" Environmental Controls " /></form></dt>
-        <dt><form method="link" action="/Cam.html"> <input id="regularbutton" type="submit" value=" Camera Setup " /></form></dt>
+		<ul>
+	<!-- Change sample numbers to proper variables -->
+		<li>Internal Temperature: <span><b>20</b></span> &#8457 C</li>	
+		<li>Supply Voltage: <span><b>42</b></span> Volts</li> 
+		<li>Regulated Voltage:  <span><b>5.02</b></span> Volts</li>
+		<li>IP Address:  <span><b>192.168.1.100</b></span></li>
+		</ul>
+		<TABLE cellspacing=2 cellpadding=4>
+<TR> <TD>Internal Temperature: </TD>      <TD>20</TD> <TD>  &#8457 C</TD> </TR>
+<TR> <TD>Supply Voltage: </TD>     <TD>42</TD> <TD> Volts</TD> </TR>
+<TR> <TD>Regulated Voltage: </TD>      <TD>5.02</TD> <TD> Volts</TD> </TR>
+<TR> <TD>IP Address: </TD> <TH COLSPAN=2>192.168.1.100</TD> <TD> </TD> </TR>
+</TABLE>
+	</article>
 </body>
 </html>
