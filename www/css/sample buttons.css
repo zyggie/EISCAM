@@ -1,0 +1,39 @@
+a.button{
+    color:white;
+    padding:5px 20px;
+    text-shadow:1px 1px 0 #145982;
+    font-family:Arial,Helvetica,sans-serif;
+    font-size:15px;
+    font-weight:bold;
+    text-align:center;
+    border:1px solid #60b4e5;
+    margin:10px auto;
+    float:left;
+    clear:both;
+    /*
+        CSS3 gradients for webkit and mozilla browsers fallback color for the rest:
+    */
+ 
+    background-color: #323232;
+    background-image: -moz-linear-gradient(#A9B6B6, #AFA4E6);
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#A902B6), to(#AFA4E6));
+    box-shadow:3px 3px 3px #000000;
+    -moz-box-shadow:3px 3px 3px #000000;
+    -webkit-box-shadow:3px 3px 3px #000000;
+    border:2px solid #6902B6;
+    border-radius:6px;
+    -moz-border-radius:6px;
+    -webkit-border-radius:6px;
+}
+ 
+a.button:hover
+	{
+    /* Lighter gradients for the hover effect */
+    text-decoration:none;
+    background-color: #F902B6;
+    background-image: -moz-linear-gradient(#6bbbe9, #57a5d4);
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#6bbbe9), to(#57a5d4));
+    box-shadow:3px 3px 3px #333;
+    -moz-box-shadow:3px 3px 3px #333;
+    -webkit-box-shadow:3px 3px 3px #333;
+}

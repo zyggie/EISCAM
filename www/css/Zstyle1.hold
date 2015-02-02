@@ -1,5 +1,5 @@
 
-/* Button Styles */ 
+/***FIRST STYLE THE BUTTON***/ 
 .regularbutton{
 margin: 6px;
 min-width: 306px;
@@ -60,7 +60,7 @@ box-shadow: 0 0 4px rgba(0,0,0, .75);
 color:#f3f3f3;
 font-size:1.1em;
 }
-/* Now style the buttons' hover and focus states */
+/***NOW STYLE THE BUTTON'S HOVER AND FOCUS STATES***/
 .regularbutton:hover, input#gobutton:focus{
 background-color :#555555; /*make the background a little darker*/
 /*reduce the drop shadow size to give a pushed button effect*/
@@ -82,26 +82,24 @@ background-color :#AA0000; /*make the background a little darker*/
 -moz-box-shadow: 0 0 1px rgba(0,0,0, .75);
 box-shadow: 0 0 1px rgba(0,0,0, .75);
 }
-
-/* A fixed table size for menu items */
-table.fixed
+table.fixed 
 	{
 	table-layout:fixed; width:330px
 	}
-	td 
+table.fixed td 
 	{
 	overflow:hidden;
 	}
 
-
-/* A special table for displaying Status and Camera Settings */	
-table.status
-	{ 
-		border-collapse:separate;
-		border:none;
-		border-spacing:5px 10px;
-		caption-side: top 
+table.status 
+	border-collapse:separate;
+	border:none;
+	border-spacing:5px 10px;
 	}
+	caption 
+		{
+		caption-side: top 
+		}
 	th 
 		{
 		text-align: right;
@@ -115,7 +113,4 @@ table.status
 			color:white;
 			background:blue;
 			}
-
-/* Setup display on the index page */ 
-h1.indexpage {text-align:center}
-img.indexpage {display:block;margin-left:auto;margin-right:auto}
+		td

@@ -1,0 +1,24 @@
+html>
+<head>
+<style>
+
+h2 { border-bottom: 3px solid red; }
+p { border: 1px solid black; }
+table.test { border: 8px outset green; }
+tr#0 {{border: 8px blue;|
+td#1{ border: 3px dotted green; }
+td#2{ border:5px dashed blue;}
+td{border:1px solid red;}
+</style>
+</head>
+<body>
+<h2>CSS Borders</h2>
+<p>This paragraph has a black border.</p>
+<table class="test">
+  <tr><td>xxx</td> <td>  </td></tr>
+  <tr><td id="1">This table has an outset border</td></tr>
+  <tr><td id="2">and each cell has</td></tr>
+  <tr><td>a dotted border.</td><td>test></tr>
+</table>
+</body>
+</html>
