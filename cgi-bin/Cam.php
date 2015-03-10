@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>EISCAM Camera Menu</title>
-		<link rel="stylesheet" href="css/Zstyle1.css" type="text/css" />
+		<link rel="stylesheet" href="/css/Zstyle1.css" type="text/css" />
 	</head>
 	<body>
 		<header>
@@ -13,7 +13,7 @@
 		<table class="fixed">
 			<tr>
 				<td>
-					<form method="get" action="Main.html">
+					<form method="get" action="/Main.html">
 						<input class="regularbutton" type="submit" value="Return to Main Menu" />
 					</form>
 				</td>
@@ -44,7 +44,7 @@
                         </tr>
 
  			<tr>
-			   <TH>shutter_speed: </th><TD>?</TD><td>&mu;s</td><td><input id="shutter_speed" type="number" min="0" max="20" /></td><td>*note set this to 0 for automatic.</td>
+			   <TH>shutter_speed: </th><TD><?php echo exec('/home/pi/EISCAM/cgi-bin/get_shutter_speed.sh')?></TD><td>&mu;s</td><td><input id="shutter_speed" type="number" min="0" max="20" /></td><td>*note set this to 0 for automatic.</td>
 
 			</tr>
 			<tr>

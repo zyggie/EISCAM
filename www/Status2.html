@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>EISCAM Status Menu</title>
+		<link rel="stylesheet" href="css/Zstyle1.css" type="text/css" />
+	</head>
+	<body>
+		<header>
+			<h1>EISCam Status</h1>
+			<hr>
+		</header>
+		<table>
+			<tr>
+				<td>
+					<form method="get" action="Main.html">
+						<input class="regularbutton" type="submit" value="Return to Main Menu" />
+					</form>
+				</td>
+			</tr>
+		</table>
+		<p>
+		</p>
+		
+		<table class="status">
+			<CAPTION>EISCam Status Readings</CAPTION>
+			<tr class="column-header">
+				<td>ITEM</td><td>VALUE</td><td>UNIT</td>
+			</tr>
+			<tr>
+			   <TH>Internal Temperature:</th><TD><?php echo exec('sudo vcgencmd measure_temp');?></TD><td>&#176;C</td>
+			</tr>
+			<tr>
+			   <TH>Relative Sky Irradiance:</th><TD>30</TD><td>%</td>
+			</tr>
+			<tr>
+			   <TH>Supply Voltage: </th><TD>42</TD><td>Volts</td>
+			</tr>
+			<tr>
+			   <TH>Regulated Voltage: </th><TD>5.02</TD><td>Volts</td>
+			</tr>
+			<tr>
+			   <TH>IP Address: </th><TD colspan=2>192.168.1.100</TD>
+			</tr>
+		</table>
+	</body>
+</html>

@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>EISCAM Main Menu</title>
-		<link rel="stylesheet" href="css/Zstyle1.css" type="text/css" />
+		<link rel="stylesheet" href="/css/Zstyle1.css" type="text/css" />
 	</head>
 	<body>
 		<header>
@@ -13,21 +13,21 @@
 		<table>
 			<tr>
 				<td  colspan=2>
-					<form method="get" action="Status.html">
+					<form method="post" action="cgi-bin/Status.php">
 						<input class="regularbutton" type="submit" value="Status" />
 					</form>
 				</td>
 			</tr>
 			<tr>
 				<td colspan=2>
-					<form method="get" action="MDC.html">
+					<form method="post" action="MDC.html">
 						<input class="regularbutton" type="submit" value="Data Controls" />
 					</form>
 				</td>
 			</tr>
 			<tr>
 				<td colspan=2>
-					<form method="get" action="GPS.html">
+					<form method="post" action="GPS.html">
 						<input class="regularbutton" type="submit" value="GPS and Inclinometer Setup" />
 					</form>
 				</td>
@@ -35,7 +35,7 @@
 			<!--
 			<tr>
 				<td colspan=2>
-					<form method="get" action="Env.html">
+					<form method="post" action="Env.html">
 						<input class="regularbutton" type="submit" value=" Environmental Controls" />
 					</form>
 				</td>
@@ -43,19 +43,19 @@
 			-->
 			<tr>
 				<td colspan=2>
-					<form method="get" action="Cam.html">
+					<form method="post" action="cgi-bin/Cam.php">
 						<input class="regularbutton" type="submit" value=" Camera Setup" />
 					</form>
 				</td>
 			</tr>
 			<tr>
 				<td>
-					<form method="get" action="temp.html">
+					<form method="post" action="temp.html">
 						<input class="gobutton" type="submit" value="START" />
 					</form>
 				</td>
 				<td>
-					<form method="get" action="temp.html">
+					<form method="post" action="temp.html">
 						<input class="stopbutton" type="submit"  value="STOP" />
 					</form>
 				</td>
